@@ -1,17 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancing Job Portal for Students of HSTU</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+    .signup-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-     <marquee height="100px" scrollamount="20" style="background-color:rgb(218, 32, 153);color:aqua; font-size:x-large;"
-                 direction="left" loop="">
-            <div class="geek1">
-              <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif, 'Arial Narrow', Arial, sans-serif;">𝓕𝓻𝓮𝓮𝓵𝓪𝓷𝓬𝓲𝓷𝓰 𝓦𝓮𝓫 𝓟𝓸𝓻𝓽𝓪𝓵</h1> 
-            </div>
-            
-        </marquee>
+
+  <header>
+    <h1>Freelancing Job Portal for Students of HSTU</h1>
+    <p>Empowering students to showcase their skills, find freelance work, and get inspired by seniors.</p>
+    <button class="signup-btn">Sign Up / Log In</button>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>🧑‍💻 Create Student Profile</h2>
+      <p>Build your professional student profile highlighting your skills, department, and projects.</p>
+    </div>
+
+    <div class="card">
+      <h2>📋 Personalized Job Feed</h2>
+      <p>Get job recommendations tailored to your skills and interests in real-time.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌟 See Senior's Work</h2>
+      <p>Explore projects completed by seniors to get inspired and find mentorship opportunities.</p>
+    </div>
+
+    <div class="card">
+      <h2>📨 Apply to Jobs</h2>
+      <p>Apply for freelance jobs posted by peers, teachers, or external clients directly from the platform.</p>
+    </div>
+
+    <div class="card">
+      <h2>💬 In-app Messaging</h2>
+      <p>Communicate easily with job posters and teammates through built-in chat.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔒 Secure & Verified</h2>
+      <p>All users and job posts are verified for a safe freelancing environment within the HSTU community.</p>
+    </div>
+  </div>
+
 </body>
 </html>
