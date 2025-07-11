@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #161b22;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.signup-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    color: #c9d1d9;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #ffffff;
+}
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #ffffff;
+}
+
+
+.input-group input:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 5px #58a6ff55;
+}
+.input-group select:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 5px #58a6ff55;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #238636;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2ea043;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.login-link a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,86 +1,122 @@
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #120f1f;
+            color: #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #e0e5ec;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.container {
-  background: #e0e5ec;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 30px #c2c8d0, -10px -10px 30px #ffffff;
-  width: 300px;
-}
-.tabs {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.tabs button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  background: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.tabs button.active {
-  background: #d1d9e6;
-  box-shadow: inset 2px 2px 5px #bec4cb, inset -2px -2px 5px #f0f5fa;
-}
-.form {
-  display: none;
-  flex-direction: column;
-}
-.form.active {
-  display: flex;
-}
-input {
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 10px;
-  border: none;
-  background: #e0e5ec;
-  box-shadow: inset 4px 4px 6px #c8ccd1, inset -4px -4px 6px #f0f5fa;
-}
-.btn {
-  margin-top: 10px;
-  padding: 12px;
-  background: #e0e5ec;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 6px 6px 10px #c2c8d0, -6px -6px 10px #ffffff;
-  transition: 0.3s;
-}
-.btn:hover {
-  background: #d6dce4;
-}
-.or {
-  text-align: center;
-  margin: 15px 0 10px;
-  font-size: 0.85em;
-  color: #666;
-}
-.socials {
-  display: flex;
-  justify-content: space-around;
-}
-.social {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background: #e0e5ec;
-  box-shadow: 6px 6px 10px #c2c8d0, -6px -6px 10px #ffffff;
-  font-size: 1.2em;
-  cursor: pointer;
-}
+        header {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+        }
+
+        header nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #ccc;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 13px;
+            color: #bbb;
+            text-align: left;
+        }
+
+        .container input[type="email"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: none;
+            background: #1e1b2e;
+            color: #eee;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 20px;
+            color: #aaa;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #a855f7;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #a855f7, #6366f1);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .container button:hover {
+            transform: translateY(-2px);
+        }

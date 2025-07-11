@@ -4,69 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freelancing Job Portal for Students of HSTU</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      color: #555;
-      font-size: 1.1rem;
-    }
-    .signup-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .card {
-      background-color: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-    .card p {
-      color: #666;
-      font-size: 0.95rem;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
+ 
 </head>
 <body>
 
   <header>
     <h1>Freelancing Job Portal for Students of HSTU</h1>
     <p>Empowering students to showcase their skills, find freelance work, and get inspired by seniors.</p>
-    <button onclick="goToSignup()" "signup-btn">Sign Up / Log In</button>
+    <button onclick="goToSignup()" class="signup-btn">Sign Up / Log In</button>
   </header>
 
   <div class="container">
